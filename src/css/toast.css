@@ -1,0 +1,12 @@
+.Toastify__toast {
+    background-color: rgb(255, 148, 77);
+}
+
+.react-confirm-alert-body {
+    color: rgb(255, 105, 36);
+}
+
+.react-confirm-alert-button-group > button {
+    background-color: rgb(255, 113, 31);
+    font-size: 14px;
+}
