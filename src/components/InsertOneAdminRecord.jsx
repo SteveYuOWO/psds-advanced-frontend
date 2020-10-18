@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import AdminApi from '../api/AdminApi'
 import Loading from './Loading'
+import {ToastContainer, toast} from 'react-toastify';
 
 export class InsertOneAdminRecord extends Component {
     constructor() {
@@ -21,7 +22,7 @@ export class InsertOneAdminRecord extends Component {
                 password: this.state.password
             }
             AdminApi.insertOneAdmin(admin).then((res) => {
-                alert(res.data)
+                toast.success(res.data)
             }).then(() => {
                 this.setState({loading: false})
                 this.props.hidden()
@@ -91,6 +92,7 @@ export class InsertOneAdminRecord extends Component {
                     </div>
                 </div>
                 <Loading show={this.state.loading}/>
+                <ToastContainer/>
             </div>
         )
     }

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { toast } from 'react-toastify';
 import StudentApi from '../api/StudentApi';
 import TeacherApi from '../api/TeacherApi';
-import Loading from './Loading'
 
 export class UpdatePersonalInfoView extends Component {
     constructor(props) {
